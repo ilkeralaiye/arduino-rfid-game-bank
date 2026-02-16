@@ -1,4 +1,3 @@
-Bu proje; Arduino, RFID okuyucu, Keypad ve LCD ekran kullanarak bir güvenlik/giriş sistemi simüle eder.
 This projects goal is producing a vault for boardgames that making easy to deal with the currency.
 
 We use 
