@@ -1,0 +1,23 @@
+#ifndef CONFIG_H
+#define CONFIG_H
+
+#include <Wire.h>
+#include <LiquidCrystal_I2C.h> // LCD Screen
+#include <Keypad.h> // Keypad
+#include <SPI.h>
+#include <MFRC522.h>
+
+#define SS_PIN 10
+#define RST_PIN A0
+
+const byte rows[4] = {2, 3, 4, 5};
+const byte cols[4] = {6, 7, 8, 9};
+
+char keys[4][4] = {
+  {'D', 'C', 'B', 'A'},
+  {'#', '9', '6', '3'},
+  {'0', '8', '5', '2'},
+  {'*', '7', '4', '1'},
+};
+
+#endif
