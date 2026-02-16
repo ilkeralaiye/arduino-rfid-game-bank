@@ -13,6 +13,8 @@
 const byte rows[4] = {2, 3, 4, 5};
 const byte cols[4] = {6, 7, 8, 9};
 
+char *cardArray[4] = {"AAE96E06", "25DB6F06", "CE6E5906", "C7065906"};
+
 char keys[4][4] = {
   {'D', 'C', 'B', 'A'},
   {'#', '9', '6', '3'},
@@ -22,5 +24,9 @@ char keys[4][4] = {
 
 LiquidCrystal_I2C lcd(0x27, 16, 2);
 Keypad keypad = Keypad(makeKeymap(keys), rows, cols, 4, 4);
+
+MFRC522 rfid(SS_PIN, RST_PIN);
+
+MFRC522::MIFARE_Key key;
 
 #endif
