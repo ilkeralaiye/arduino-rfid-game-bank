@@ -20,4 +20,7 @@ char keys[4][4] = {
   {'*', '7', '4', '1'},
 };
 
+LiquidCrystal_I2C lcd(0x27, 16, 2);
+Keypad keypad = Keypad(makeKeymap(keys), rows, cols, 4, 4);
+
 #endif
